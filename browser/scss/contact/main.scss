@@ -1,29 +1,29 @@
-#home {
+#contact {
 
-  background: $homeback;
+  background: $contactback;
   height: 100%;
 
   h1 {
     margin-top: 40px;
     text-align: center;
-    color: $hometext;
+    color: $contacttext;
   }
 
   navbar {
     a {
-      color: $hometext;
+      color: $contacttext;
       
       &.active {
         &:after{
           width: 100%;
-          background: $hometext;
+          background: $contacttext;
         }  
       }
       &:hover {
         background: none;
         &:after{
           width: 100%;
-          background: $hometext;
+          background: $contacttext;
         }  
       }
       &:focus {

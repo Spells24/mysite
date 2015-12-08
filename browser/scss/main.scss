@@ -1,9 +1,17 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background: #fdfdfd;
+	background: #fdfdfd;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+#main {
+	height: 100%;
 }
 
 @mixin clearfix {
@@ -14,13 +22,44 @@ body {
   }
 }
 
-#main {
-  padding-top: 60px;
-  margin: 0 auto;
-}
+//Variables for colors on the 4 pages
+
+//dark back light text
+
+// $homeback: #003300;
+// $hometext: lighten(#bcf421, 15%);
+// $blogback: #000040;
+// $blogtext: #BFEFFF;
+// $projectsback: #660000;
+// $projectstext: lighten(#ff6600, 25%);
+// $contactback: black;
+// $contacttext: white;
+
+//light back dark text
+
+$hometext: #003300;
+$homeback: lighten(#bcf421, 35%);
+$blogtext: #000040;
+$blogback: lighten(#BFEFFF, 2%);
+$projectstext: #660000;
+$projectsback: lighten(#ff6600, 45%);
+$contacttext: black;
+$contactback: white;
+
+//white back dark text
+
+// $hometext: #003300;
+// $homeback: white;
+// $blogtext: #000040;
+// $blogback: white;
+// $projectstext: #660000;
+// $projectsback: white;
+// $contacttext: black;
+// $contactback: white;
+
 
 @import 'directives/main';
 @import 'home/main';
-@import 'about/main';
-@import 'tutorial/main';
-@import 'login/main';
+@import 'projects/main';
+@import 'blog/main';
+@import 'contact/main';
