@@ -37,12 +37,12 @@ html {
 
 //light back dark text
 
-$hometext: #003300;
-$homeback: lighten(#bcf421, 35%);
-$blogtext: #000040;
-$blogback: lighten(#BFEFFF, 2%);
-$projectstext: #660000;
-$projectsback: lighten(#ff6600, 45%);
+$hometext: lighten(#003300, 2%);
+$homeback: lighten(#bcf421, 40%);
+$blogtext: lighten(#000040, 10%);
+$blogback: lighten(#BFEFFF, 8%);
+$projectstext: lighten(#660000, 10%);
+$projectsback: lighten(#ff6600, 48%);
 $contacttext: black;
 $contactback: white;
 
